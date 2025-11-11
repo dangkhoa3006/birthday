@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Confetti from "react-confetti";
 import DateHeader from "./DateHeader";
 import MainTitle from "./MainTitle";
@@ -43,7 +42,7 @@ export default function DesktopLayout({
           width={windowSize.width}
           height={windowSize.height}
           recycle={false}
-          numberOfPieces={500}
+          numberOfPieces={200}
           gravity={0.3}
         />
       )}

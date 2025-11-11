@@ -15,6 +15,16 @@ export default function LetterPage() {
     <div className="relative w-full min-h-screen overflow-hidden bg-white animate-fade-in">
       <Curtain />
       <BackgroundImage />
+      
+      {/* Happy Birthday Title */}
+      <div className="absolute top-[15%] md:top-[12%] left-1/2 -translate-x-1/2 z-10 w-full px-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+        <h1 className="text-[32px] md:text-[48px] lg:text-[64px] font-bold text-center tracking-wider" style={{ fontFamily: 'var(--font-montserrat)' }}>
+          <span className="relative inline-block bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 bg-clip-text text-transparent animate-shimmer drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+            HAPPY BIRTHDAY
+          </span>
+        </h1>
+      </div>
+      
       <ImageSwiper />
       <ThankYouLetter showLetter={showLetter} setShowLetter={setShowLetter} />
       

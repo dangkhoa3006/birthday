@@ -61,7 +61,7 @@ export default function CountdownBox({ value, label, color, position, delay, sho
           </p>
         </div>
       </div>
-      <p className="text-white text-[10px] lg:text-[24px] font-semibold mt-0.5 lg:mt-4 tracking-wider uppercase" style={{ fontFamily: 'var(--font-montserrat)' }}>
+      <p className="text-white text-[10px] lg:text-[24px] font-semibold mt-0.5 lg:mt-4 tracking-wider uppercase text-center w-full" style={{ fontFamily: 'var(--font-montserrat)' }}>
         {label}
       </p>
     </div>

@@ -42,7 +42,7 @@ export default function MobileLayout({
           width={windowSize.width}
           height={windowSize.height}
           recycle={false}
-          numberOfPieces={500}
+          numberOfPieces={200}
           gravity={0.3}
         />
       )}
@@ -51,7 +51,7 @@ export default function MobileLayout({
       <BackgroundImage />
 
       {/* Header block */}
-      <div className="mt-10 flex flex-col items-center text-center leading-relaxed tracking-wide z-10 relative">
+      <div className="pt-6 pb-4 flex flex-col items-center text-center leading-relaxed z-10 relative w-full px-4">
         <DateHeader
           day={day}
           month={month}
@@ -60,13 +60,13 @@ export default function MobileLayout({
           monthNames={monthNames}
         />
         {/* thêm khoảng cách giữa header và title */}
-        <div className="mt-3">
+        <div className="mt-2 w-full">
           <MainTitle />
         </div>
       </div>
 
       {/* Centered main group */}
-      <div className="absolute left-1/2 top-[60%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-10">
+      <div className="absolute left-1/2 top-[45%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-10">
         {/* Countdown */}
         <div className="flex flex-row gap-3 items-center justify-center w-full max-w-[260px] px-2">
           <CountdownBox value={countdown.days} label="DAY" color="pink" position={{ left: "0", top: "0" }} delay="0.4s" />
@@ -75,13 +75,13 @@ export default function MobileLayout({
         </div>
 
         {/* Born & Age */}
-        <div className="mt-4 flex flex-row justify-center items-center gap-16 w-full">
+        <div className="mt-3 flex flex-row justify-center items-center gap-12 w-full">
           <BornSection year={year} />
           <AgeSection age={age} />
         </div>
 
         {/* Celebrate Button */}
-        <div className="mt-6">
+        <div className="mt-4">
           <CelebrateButton onClick={handleCelebrate} />
         </div>
       </div>

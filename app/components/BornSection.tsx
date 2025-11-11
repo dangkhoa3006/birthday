@@ -11,7 +11,7 @@ export default function BornSection({ year }: BornSectionProps) {
       style={{ animationDelay: "0.3s" }}
     >
       <p
-        className="text-gray-200 text-xs uppercase tracking-wider mb-1 lg:hidden"
+        className="text-gray-200 text-xs uppercase tracking-wider mb-1 lg:hidden text-center"
         style={{ fontFamily: "var(--font-montserrat)" }}
       >
         Born

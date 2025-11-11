@@ -11,7 +11,7 @@ export default function AgeSection({ age }: AgeSectionProps) {
       style={{ animationDelay: "0.6s" }}
     >
       <p
-        className="text-gray-200 text-xs uppercase tracking-wider mb-1 lg:hidden"
+        className="text-gray-200 text-xs uppercase tracking-wider mb-1 lg:hidden text-center"
         style={{ fontFamily: "var(--font-montserrat)" }}
       >
         Age

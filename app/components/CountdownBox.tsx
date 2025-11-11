@@ -27,6 +27,7 @@ export default function CountdownBox({ value, label, color, position, delay, sho
     pink: {
       gradient: "from-pink-500/20 to-pink-600/20",
       accent: "via-pink-400",
+      dot: "bg-pink-400",
     },
     blue: {
       gradient: "from-blue-500/20 to-blue-600/20",
@@ -36,6 +37,7 @@ export default function CountdownBox({ value, label, color, position, delay, sho
     red: {
       gradient: "from-red-500/20 to-orange-500/20",
       accent: "via-red-400",
+      dot: "bg-red-400",
     },
   };
 

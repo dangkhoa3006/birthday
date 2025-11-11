@@ -9,6 +9,7 @@ import AgeSection from "./AgeSection";
 import CelebrateButton from "./CelebrateButton";
 import BackgroundImage from "./BackgroundImage";
 import Curtain from "./Curtain";
+import MusicPlayer from "./MusicPlayer";
 
 interface DesktopLayoutProps {
   age: number;
@@ -49,6 +50,7 @@ export default function DesktopLayout({
 
       <Curtain />
       <BackgroundImage />
+      <MusicPlayer />
       <DateHeader 
         day={day} 
         month={month} 

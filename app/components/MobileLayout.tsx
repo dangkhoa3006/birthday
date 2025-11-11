@@ -9,6 +9,7 @@ import AgeSection from "./AgeSection";
 import CelebrateButton from "./CelebrateButton";
 import BackgroundImage from "./BackgroundImage";
 import Curtain from "./Curtain";
+import MusicPlayer from "./MusicPlayer";
 
 interface MobileLayoutProps {
   age: number;
@@ -49,6 +50,7 @@ export default function MobileLayout({
 
       <Curtain />
       <BackgroundImage />
+      <MusicPlayer />
 
       {/* Header block */}
       <div className="pt-6 pb-4 flex flex-col items-center text-center leading-relaxed z-10 relative w-full px-4">
